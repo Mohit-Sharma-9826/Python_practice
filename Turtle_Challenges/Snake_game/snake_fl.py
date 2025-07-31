@@ -54,3 +54,9 @@ class Snake:
         diff = int(abs(cur_dir - ch_dir))
         if diff != 180:
             obj.setheading(ch_dir)
+
+    def restart(self):
+        for i in self.turtle_list:
+            i.goto(1000, 1000)
+        self.turtle_list.clear()
+        self.create_snake()

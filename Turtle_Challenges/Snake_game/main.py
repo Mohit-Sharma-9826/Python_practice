@@ -42,20 +42,18 @@ while True:
     for i in range(1, len(body)):
         if body[0].distance(body[i]) < 5:
             flag = 1
-            break
+            
+            
+    if flag == 1:
+        # score.reason()
+        score.update()
+        snake.restart()
+        # break
 
-    if flag == 1 or obj.pos()[0] > 290 or obj.pos()[0] < -290 or obj.pos()[1] > 290 or obj.pos()[1] < -290:
-        if flag == 1:
-            score.reason()
-            break
-        score.game_over()
-        break
-
-to = Turtle()
-to.shape("turtle")
-to.color("red")
-to.setpos(-100, 260)
-to.forward(500)
-
+    if obj.pos()[0] > 290 or obj.pos()[0] < -290 or obj.pos()[1] > 290 or obj.pos()[1] < -290:
+        # score.game_over()
+        score.update()
+        snake.restart()
+        # break
 
 screen.exitonclick()
