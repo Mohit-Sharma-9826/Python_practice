@@ -9,15 +9,15 @@ def sgpaCalculate(semester):
 
         if marks >= 0 and marks < 40:
             grade = 0
-        elif marks >= 40 and marks < 49:
+        elif marks >= 40 and marks <= 49:
             grade = 5
-        elif marks >= 50 and marks < 59:
+        elif marks >= 50 and marks <= 59:
             grade = 6 
-        elif marks >= 60 and marks < 69:
+        elif marks >= 60 and marks <= 69:
             grade = 7 
-        elif marks >= 70 and marks < 79:
+        elif marks >= 70 and marks <= 79:
             grade = 8 
-        elif marks >= 80 and marks < 89:
+        elif marks >= 80 and marks <= 89:
             grade = 9 
         elif marks >= 90 and marks <= 100:
             grade = 10 
