@@ -21,6 +21,7 @@ def sgpaCalculate(semester):
             grade = 9 
         elif marks >= 90 and marks <= 100:
             grade = 10 
+            
         else:
             print("Enter marks between 0 to 100!")
             exit()
