@@ -109,4 +109,3 @@ elif gpa == "cgpa":
 
 else:
     print("Invalid Input!")
-
